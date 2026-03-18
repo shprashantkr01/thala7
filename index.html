@@ -43,6 +43,16 @@
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3R-04UWjGHXnz8gqFhNaWJb7mu27NfOQ7Ag&s"
             alt="placeholder profile picture" />
         </div>
+        <div id="hamburger"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <div id="hamburgerMenu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">More</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -87,8 +97,8 @@
       <p>Home > Thala for a reason > seven By M.S Dhoni multicolor converse shoes.</p>
     </div>
     <div id="productDetails">
-      <div><img src="./Images/shoe6.jpg" alt=""></div>
-      <div>
+      <div id="leftProductDetails"><img src="./Images/shoe6.jpg" alt=""></div>
+      <div id="rightProductDetails">
         <div>
           <h1>Seven By M.S Dhoni multicolor converse shoes.</h1>
         </div>
@@ -120,6 +130,81 @@
       <div class="productDisplayCard"><img src="./Images/shoe7.jpg" alt="shoe image 7"></div>
     </div>
   </section>
+  <section class="shoppingCart">
+    <div id="leftShoppingCartSection">
+      <h2>Shopping Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Seven by M.S Dhoni..</td>
+            <td>- 1 +</td>
+            <td>$4,999</td>
+            <td><i class="fa-solid fa-x"></i></td>
+          </tr>
+          <tr>
+            <td>Seven by M.S Dhoni..</td>
+            <td>- 1 +</td>
+            <td>$4,999</td>
+            <td><i class="fa-solid fa-x"></i></td>
+          </tr>
+          <tr>
+            <td>Seven by M.S Dhoni..</td>
+            <td>- 1 +</td>
+            <td>$4,999</td>
+            <td><i class="fa-solid fa-x"></i></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="continueShopping"><i class="fa-solid fa-backward"></i>
+        <p>continue shopping</p>
+      </h3>
+    </div>
+    <div id="rightShoppingCartSection">
+      <div class="couponSection">
+        <div id="heading">Enter Coupon Code</div>
+        <div id="CouponForm">
+          <form action="">
+            <input type="text" placeholder="Add Coupon">
+            <input type="submit" value="Apply Coupon">
+          </form>
+        </div>
+        <div id="billTable">
+          <table>
+            <tbody>
+              <tr>
+                <td>Sub Total</td>
+                <td>$4,700</td>
+              </tr>
+              <tr>
+                <td>Taxes(if applicable)</td>
+                <td>$199</td>
+              </tr>
+              <tr>
+                <td>Discount</td>
+                <td>$0</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Total</td>
+                <td>$4,999</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <button><a href="checkout.html">Pay Now</a></button>
+    </div>
+  </section>
+
 </body>
 
 </html>

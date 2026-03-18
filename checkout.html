@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>task11</title>
+</head>
+
+<body>
+    <div id="checkoutContainer">
+        <div id="leftCheckoutContainer">
+            <div class="heading1">
+                <h3>checkout</h3>
+            </div>
+            <div class="contactDetails">
+                <h3>contact details</h3>
+                <form action="">
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email" id="email" placeholder="Email Id" required>
+                </form>
+            </div>
+            <div class="paymentDetails">
+                <h3>Payment</h3>
+                <div class="detailsForm">
+                    <div class="cardHolder">
+                        <div class="card"><i class="fa-regular fa-credit-card"></i>
+                            <h3>Card</h3>
+                        </div>
+                        <div class="card"><i class="fa-solid fa-bitcoin-sign"></i>
+                            <h3>Crypto</h3>
+                        </div>
+                        <div class="card"><i class="fa-solid fa-building-columns"></i>
+                            <h3>Bank</h3>
+                        </div>
+                    </div>
+                    <div class="paymentForm">
+                        <form>
+
+                            <div class="formGroup fullWidth">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" placeholder="Card Number">
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="Expiry">Expiry</label>
+                                <input type="date" id="Expiry">
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="CVV">
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="country">Country</label>
+                                <select id="country">
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>UK</option>
+                                </select>
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="zip">ZIP</label>
+                                <input type="text" id="zip" placeholder="ZIP">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rightShoppingCartSection">
+            <div class="rightHeading"><h2>Order Summary</h2></div>
+            <div class="couponSection">
+                <div id="heading">Enter Coupon Code</div>
+                <div id="CouponForm">
+                    <form action="">
+                        <input type="text" placeholder="Add Coupon">
+                        <input type="submit" value="Apply Coupon">
+                    </form>
+                </div>
+                <div id="billTable">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Sub Total</td>
+                                <td>$4,700</td>
+                            </tr>
+                            <tr>
+                                <td>Taxes(if applicable)</td>
+                                <td>$199</td>
+                            </tr>
+                            <tr>
+                                <td>Discount</td>
+                                <td>$0</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>$4,999</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <button><a href="checkout.html">Pay Now</a></button>
+        </div>  
+    </div>
+</body>
+
+</html>
